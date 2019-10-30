@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<div id="btns"><!--div for the two main buttons-->
+		<button id="leftbtn">Left</button> <button id="rightbtn">Right</button>
+	</div>
+	<br><!--new line-->
+	<button id="createbtn">Create</button>
+	<div id="list"><!--this holds the lists-->
+		<ul id="leftlist">
+			<li>first</li>
+		</ul>
+		<ul id="rightlist">
+			<li>first</li>
+		</ul>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$('#leftbtn').on('click', function(){
+			//if statment!
+			// $('#leftlist').add('<li>element</li>');
+			// ('<li>element</li>').appendTo('$leftlist');
+		})
+	</script>
+</body>
+</html>

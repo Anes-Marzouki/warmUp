@@ -1,4 +1,4 @@
-/*
+/*,;k
 var text = document.getElementsByTagName('input');
 function createsItem () {
 	$('button').on.('click','text...' );
