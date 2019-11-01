@@ -1,6 +1,10 @@
-/* 1. Create a function that takes a Roman numeral as its argument and returns its value as a numeric decimal integer. You don't need to validate the form of the Roman numeral.
+/* 1. Create a function that takes a Roman numeral as its argument and returns its value as a numeric decimal integer.
+    You don't need to validate the form of the Roman numeral.
 
-        Modern Roman numerals are written by expressing each decimal digit of the number to be encoded separately, starting with the leftmost digit and skipping any 0s. So 1990 is rendered "MCMXC" (1000 = M, 900 = CM, 90 = XC) and 2008 is rendered "MMVIII" (2000 = MM, 8 = VIII). The Roman numeral for 1666, "MDCLXVI", uses each letter in descending order.
+        Modern Roman numerals are written by expressing each decimal digit of the number to be encoded separately,
+        starting with the leftmost digit and skipping any 0s.
+        So 1990 is rendered "MCMXC" (1000 = M, 900 = CM, 90 = XC) and 2008 is rendered "MMVIII" (2000 = MM, 8 = VIII).
+        The Roman numeral for 1666, "MDCLXVI", uses each letter in descending order.
 
         Example:
 
@@ -16,14 +20,51 @@
             C          100
             D          500
             M          1,000 
+
+
     
-    2. Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
+    2. Complete the method/function so that it converts dash/underscore delimited words into camel casing.
+        The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
         Examples:
 
         toCamelCase("the-stealth-warrior") // returns "theStealthWarrior"
 
         toCamelCase("The_Stealth_Warrior") // returns "TheStealthWarrior"
-    
+        -------------------------------------
+
+        function returnTrue(str){               //checks the dash/ underscor
+            if (str.match('-')){
+            split = '-';
+            }else if (str.match('_') {
+            split = '_';
+            }
+        }
+        --------------------------------------
+        function upper(arr) {                   //return CamelCase
+            var cap ;
+            for (var i = 0; i<arr.length; i++) {
+                cap = arr[i][0].toUpperCase();
+                newarray.push(cap + array[i].slice(1));
+            }
+             return newarray.join('');
+        }
+        -------------------------------------
+        */
+        function camelCase (str) {
+            var cap ;
+            if (str.match('-')) {
+                split = '-';
+            }else if (str.match('_') {
+                split = '_';
+            }
+            for (var i = 0; i<arr.length; i++) {
+                cap = arr[i][0].toUpperCase();
+                newarray.push(cap + array[i].slice(1));
+            }
+             return newarray.join('');
+        }
+
+    /*
     3. In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
         Example
 
