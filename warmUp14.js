@@ -17,7 +17,27 @@ Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
 */
+//array.indexOf(Math.min(...array)) ==== return the index of the min in the array.
 
 var maxProfit = function(prices) {
   // YOUR CODE HERE
+  var array = prices;
+  var max;
+  var min = Math.min(...array);
+  var indexOfMin = array.indexOf(min);
+  var newArray = array.slice(indexOfMin + 1); 
+//   console.log(min)
+//   console.log(indexOfMin);
+//   console.log(newArray);
+  for (var i = indexOfMin; i < newArray.length; i++) {
+      if (array[i] > min) {
+          max = newArray[i];
+      }
+  }
+//   console.log(array)
+  if (max > min) {
+      console.log(array.indexOf(max) + 1);
+  }else {
+//       console.log(0);
+  }
 };
