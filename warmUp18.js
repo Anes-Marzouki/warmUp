@@ -8,5 +8,20 @@
 // input   =  "Hello, World!"
 // result  =  "1112111121311"
 
-// input   =  "aaaaaaaaaaaa"
+// input   =  "aaaaaaaaavar obj = {};
+
+//------------code----------------
+function replaceWithNumb(input) {
+    var array = input.split('');
+    for (var i = 0; i  <array.length; i++){
+				if (obj.hasOwnProperty(array[i])){
+					obj[array[i]] += 1;
+				}else {
+					obj[array[i]] = 1;
+				}
+            }
+	return obj;
+}aaa"
 // result  =  "123456789101112"
+
+
